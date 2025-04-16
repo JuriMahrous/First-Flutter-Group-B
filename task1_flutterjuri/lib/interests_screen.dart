@@ -41,9 +41,9 @@ class _InterestsScreenState extends State<InterestsScreen> {
               const SizedBox(height: 20),
               Expanded(
                 child: GridView.count(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16,
+                  crossAxisCount: 3,
+                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 10,
                   children: interests.map((interest) {
                     final isSelected = selectedInterests.contains(interest);
                     return GestureDetector(
@@ -98,15 +98,17 @@ class _InterestsScreenState extends State<InterestsScreen> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: const Text("CONTINUE"),
+      
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (_) => const CountrySelectionScreen(),
+                        builder: (_) => const CountrySelectionScreen(
+                        ),
                       ),
                     );
                   },
+                  child: const Text("CONTINUE"),
                 ),
               )
             ],
