@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'CountrySelectionScreen.dart'; // لو بتتنقلين منه له
+import 'countryselectionscreen.dart'; // لو بتتنقلين منه له
 
 class InterestsScreen extends StatefulWidget {
   const InterestsScreen({super.key});
